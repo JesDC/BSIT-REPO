@@ -1,0 +1,21 @@
+import os        
+import string 
+
+def data_1(intText, key_num):    
+     textOutput = ""
+
+     intText = intText. lower()
+     for int_ch in intText:
+
+        if int_ch in string.ascii_letters:
+            int_var = ord(int_ch) + key_num
+
+            if int_var > ord('z'):
+                int_var = int_var - 26
+
+            textOutput = textOutput   + chr (int_var)
+
+        else:
+            textOutput = textOutput + int_ch
+
+     return textOutput
