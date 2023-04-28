@@ -16,3 +16,4 @@ while True:
         time.sleep(0.5)
 
 "This is the output"
+"Trial in trial"
